@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Stardew";
+  src: url("./assets/StardewValley.ttf") format("truetype");
+}
+body {
+  display: flex;
+  align-items: center;
+}
+
+.main-container {
+  width: 80vw;
+  height: 70vh;
+  background-image: url("./assets/main_image.png");
+  background-size: contain; /* SHOW WHOLE IMAGE */
+  background-repeat: no-repeat; /* no tiling */
+  background-position: center; /* centered on screen */
+  position: relative;
+}
+.profile-icon {
+  position: absolute;
+  left: 07%;
+  top: 12%;
+}
+.profile-icon img {
+  width: 15vw;
+  height: auto;
+}
+.beehouse img {
+  width: 2vw;
+  height: auto;
+}
+.beehouse {
+  height: auto;
+  background-color: rgb(199, 199, 148);
+}
+.name {
+  font-family: "Stardew";
+  color: black;
+  font-size: clamp(3.2rem, 1.5vw, 1.3rem);
+  position: absolute;
+  left: 6%;
+  top: 45%;
+}
+.main-img img {
+  width: 85rem;
+  height: 100%;
+}
+.projects {
+  display: flex;
+  position: absolute;
+  height: auto;
+  left: 35%;
+  top: 11%;
+  gap: 10%;
+}
