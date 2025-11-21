@@ -4,18 +4,33 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Home from "./Home";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import ProjectPage from "./ProjectPage";
+import Projects from "./Projects";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes className="home">
+    <BrowserRouter>
+      <div className="home">
+        <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/BeeFund"></Route>
+          {Projects.map((p, index) => (
+            <Route
+              path={p.path}
+              key={index}
+              element={
+                <ProjectPage
+                  title={p.title}
+                  image={p.image}
+                  icon={p.icon}
+                  description={p.description}
+                />
+              }
+            />
+          ))}
+          ;
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
-
 export default App;

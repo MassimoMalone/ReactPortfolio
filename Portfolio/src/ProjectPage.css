@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Stardew";
+  src: url("./assets/StardewValley.ttf") format("truetype");
+}
+
+.main-container {
+  width: 85vw;
+  aspect-ratio: 1920 / 1080;
+  background-image: url("./assets/Journal.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.x-button {
+  width: 7%;
+  height: 10%;
+  padding: 0.1vw 0.1vw;
+  position: absolute;
+  right: -2%;
+  top: 12%;
+}
+
+.x-picture {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  font-family: Stardew;
+  color: black;
+  left: 01.5%;
+  top: 14%;
+  font-size: clamp(1vw, 3vw, 8vw);
+  width: 30%;
+  height: 10%;
+  overflow: hidden;
+  text-align: left;
+}
+.description {
+  padding-top: 3%;
+  position: absolute;
+  font-family: Stardew;
+  color: black;
+  left: 01.5%;
+  top: 14%;
+  font-size: clamp(1vw, 2vw, 4vw);
+  width: 30%;
+  height: 90%;
+  text-align: left;
+
+  word-wrap: break-word;
+}
+
+.project-image {
+  padding-top: 4%;
+
+  width: 73%;
+  height: 49%;
+}
+
+.image-frame {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;
+  padding-top: 11%;
+  padding-left: 28%;
+}

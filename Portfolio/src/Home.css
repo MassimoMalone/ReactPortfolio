@@ -5,41 +5,57 @@
 body {
   display: flex;
   align-items: center;
+  padding-left: 10%;
 }
 
-.main-container {
+.main-container-home {
   width: 80vw;
-  height: 70vh;
+  aspect-ratio: 1920 / 1080;
   background-image: url("./assets/main_image.png");
-  background-size: contain; /* SHOW WHOLE IMAGE */
-  background-repeat: no-repeat; /* no tiling */
-  background-position: center; /* centered on screen */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
+  margin: 0 auto;
 }
 .profile-icon {
   position: absolute;
   left: 07%;
-  top: 12%;
+  top: 20%;
 }
 .profile-icon img {
   width: 15vw;
   height: auto;
 }
-.beehouse img {
-  width: 2vw;
+.icons img {
+  width: 2.5vw;
   height: auto;
+  background-color: transparent;
 }
-.beehouse {
-  height: auto;
-  background-color: rgb(199, 199, 148);
+.gpa {
+  font-family: "Stardew";
+  color: black;
+  font-size: clamp(3vw, 7vw, 8vw);
+  background-color: transparent;
+  position: absolute;
+  left: 2%;
+  top: 66%;
+  max-width: 50%;
+  max-height: 50%;
+  padding: 0.1vw 0.1vw;
+}
+
+.gpa on:hover {
+  color: lightblue;
+  background-color: lightblue;
 }
 .name {
   font-family: "Stardew";
   color: black;
-  font-size: clamp(3.2rem, 1.5vw, 1.3rem);
+  font-size: clamp(1vw, 3vw, 8vw);
   position: absolute;
-  left: 6%;
-  top: 45%;
+  left: 5%;
+  top: 48%;
 }
 .main-img img {
   width: 85rem;
@@ -50,6 +66,6 @@ body {
   position: absolute;
   height: auto;
   left: 35%;
-  top: 11%;
+  top: 20%;
   gap: 10%;
 }
