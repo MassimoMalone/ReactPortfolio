@@ -9,7 +9,7 @@ import Projects from "./Projects";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ReactPortfolio/">
       <div className="home">
         <Routes>
           <Route path="/" element={<Home />} />
