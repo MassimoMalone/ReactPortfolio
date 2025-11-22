@@ -4,6 +4,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
+  base: "/ReactPortfolio/",
   plugins: [react()],
   // Add this section to ensure a single instance of React is used
   optimizeDeps: {

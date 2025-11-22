@@ -27,8 +27,11 @@ body {
   width: 15vw;
   height: auto;
 }
+.icons {
+  background-color: transparent;
+}
 .icons img {
-  width: 2.5vw;
+  width: 4vw;
   height: auto;
   background-color: transparent;
 }
